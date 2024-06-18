@@ -21,4 +21,9 @@ public class Output
     {
         System.out.print(text);
     }
+
+    public static void skip(int n)
+    {
+        for(int i=0; i<n; i++)Output.next_line();
+    }
 }

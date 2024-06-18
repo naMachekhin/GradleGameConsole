@@ -10,7 +10,7 @@ public class Input{
         Scanner scnr=new Scanner(System.in);
         Output.delimeter();
         Output.same_line(prompt);
-        String res=scnr.next();
+        String res=scnr.nextLine();
         Output.delimeter();
         return res;
 

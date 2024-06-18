@@ -31,6 +31,21 @@ public class ScoreMap {
         score.put(name, n);
     }
 
+    public boolean has_name(String name)
+    {
+        return score.keySet().contains(name);
+    }
+
+    public int get_score(String name)
+    {
+        return score.get(name);
+    }
+
+    public void change_score(String n, int s)
+    {
+        score.put(n, s);
+    }
+
     @Override
     public String toString()
     {

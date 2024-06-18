@@ -2,6 +2,9 @@ package org.example.ScoreSaver;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class FileReader {
     private String path;
@@ -31,4 +34,22 @@ public class FileReader {
         }
         return "";
     }
+
+    public void save_string_to_file(String str){
+        try
+        {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(path));
+            writer.write(str);
+            writer.close();
+        }catch (IOException e)
+        {
+            ;
+        }
+
+
+
+    }
+
+
+
 }
