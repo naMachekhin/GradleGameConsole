@@ -1,9 +1,11 @@
 package org.example;
+import org.example.UICustom.Output;
+import org.example.UICustom.Input;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        System.out.println("Hello");
+        Input.input_box("Enter number: ");
     }
 }
