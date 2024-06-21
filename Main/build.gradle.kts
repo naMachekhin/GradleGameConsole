@@ -26,16 +26,14 @@ tasks.named<JavaExec>("run") {
 
 tasks.register("CheckSaveFilePresence") {
     val path="../ScoreSaver/src/main/resources/Score.txt"
-    doLast {
         val file = file(path)
         if (file.exists())
             println("Score file exists, check is successful.")
         else
             println("Error, cannot find score file!")
-    };
 }
 
-tasks.register("EnshureCleanScoreboard") {
+tasks.register("EnsureCleanScoreboard") {
     val path="../ScoreSaver/src/main/resources/Score.txt"
     val new_path="../ScoreSaver/src/main/resources/Old_Score.txt"
     val file = file(path)
